@@ -1,0 +1,11 @@
+package com.ccm.iam.domain;
+
+public enum RoleName {
+    ROLE_SYSTEM_ADMIN,
+    ROLE_PROJECT_MANAGER,
+    ROLE_CONTRACT_MANAGER,
+    ROLE_COST_ENGINEER,
+    ROLE_FINANCE_OFFICER,
+    ROLE_EXECUTIVE_APPROVER,
+    ROLE_AUDITOR
+}

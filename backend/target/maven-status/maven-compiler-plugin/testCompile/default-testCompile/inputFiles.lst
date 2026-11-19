@@ -1,0 +1,5 @@
+/home/mikeli94/code/construction_contract_mgmt_gemini/backend/src/test/java/com/ccm/Slice1IntegrationTest.java
+/home/mikeli94/code/construction_contract_mgmt_gemini/backend/src/test/java/com/ccm/Slice2ApprovalAndDocumentIntegrationTest.java
+/home/mikeli94/code/construction_contract_mgmt_gemini/backend/src/test/java/com/ccm/Slice3ChangeOrderAndPaymentIntegrationTest.java
+/home/mikeli94/code/construction_contract_mgmt_gemini/backend/src/test/java/com/ccm/Slice4SettlementAndReportingIntegrationTest.java
+/home/mikeli94/code/construction_contract_mgmt_gemini/backend/src/test/java/com/ccm/contract/domain/ContractDomainTest.java

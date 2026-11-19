@@ -1,0 +1,5 @@
+com/ccm/Slice4SettlementAndReportingIntegrationTest.class
+com/ccm/Slice3ChangeOrderAndPaymentIntegrationTest.class
+com/ccm/Slice1IntegrationTest.class
+com/ccm/Slice2ApprovalAndDocumentIntegrationTest.class
+com/ccm/contract/domain/ContractDomainTest.class
