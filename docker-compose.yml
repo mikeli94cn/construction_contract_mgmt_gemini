@@ -9,7 +9,7 @@ services:
       MYSQL_PASSWORD: ${CCM_DB_PASSWORD:?CCM_DB_PASSWORD must be provided in .env}
       MYSQL_ROOT_PASSWORD: ${CCM_DB_ROOT_PASSWORD:?CCM_DB_ROOT_PASSWORD must be provided in .env}
     ports:
-      - "${CCM_DB_PORT:-3306}:3306"
+      - "${CCM_DB_PORT:-3316}:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     command:
@@ -31,6 +31,7 @@ services:
       mysql:
         condition: service_healthy
     environment:
+      SERVER_PORT: 8013
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/${CCM_DB_NAME:-ccm_db}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
       SPRING_DATASOURCE_USERNAME: ${CCM_DB_USER:-ccm_app}
       SPRING_DATASOURCE_PASSWORD: ${CCM_DB_PASSWORD}
@@ -38,7 +39,7 @@ services:
       CCM_STORAGE_PATH: /var/lib/ccm/documents
       CCM_BOOTSTRAP_ADMIN_PASSWORD: ${CCM_BOOTSTRAP_ADMIN_PASSWORD:-}
     ports:
-      - "8080:8080"
+      - "8013:8013"
     volumes:
       - document_data:/var/lib/ccm/documents
 
@@ -51,7 +52,7 @@ services:
     depends_on:
       - backend
     ports:
-      - "5173:80"
+      - "8023:80"
 
 volumes:
   mysql_data:

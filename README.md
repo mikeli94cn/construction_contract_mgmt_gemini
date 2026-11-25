@@ -43,5 +43,5 @@ npm run build
    ```bash
    docker compose up --build
    ```
-   - Frontend UI: `http://localhost:5173`
-   - Backend API & OpenAPI Swagger UI: `http://localhost:8080/swagger-ui.html`
+   - Frontend UI: `http://localhost:8023`
+   - Backend API & OpenAPI Swagger UI: `http://localhost:8013/swagger-ui.html`
